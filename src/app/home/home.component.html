@@ -1,0 +1,26 @@
+<div *ngIf="!loading">
+  <div class="bg-home">
+    <app-navbar-component [isOpen]="isOpen" (navbarState)="changeState($event)"></app-navbar-component>
+    <div class="container" *ngIf="isOpen === false">
+        <div class="f60 title-home">
+          Agustin Policano
+          <p class="subtitle-home f20">Programador Front-End</p>
+          <div class="container-button-about">
+              <a><button class="btn-about-me" (click)="openDialog()">¿Quien soy? </button></a>
+          </div>
+        </div>
+        <div>
+          <app-back-arrow></app-back-arrow>
+        </div>
+    </div>
+  </div>
+  <div>
+    Holaaa
+  </div>
+</div>
+
+<div *ngIf="loading">
+  <div class="bg-home">
+    <app-loading></app-loading>
+  </div>
+</div>

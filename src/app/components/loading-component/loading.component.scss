@@ -1,0 +1,51 @@
+@import "../../../colors";
+
+
+.container-loading{
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.loading-img{
+    filter: drop-shadow(0px 10px 50px #6867AC   );
+}
+
+.loading-text{
+    text-align: center;
+    color: $orange;
+}
+
+.loading {
+    font-family: 'Hemi';
+    color: $orange;
+    filter: drop-shadow(0px 0px 10px #6867AC   );
+    font-weight: 800;
+    letter-spacing: 10px;
+    text-align: center;
+    span {
+      display: inline-block;
+      margin: 0 -.05em;
+    }
+  }
+  
+
+.loading04 {
+    span {
+      animation: loading04 .7s infinite;
+      @for $i from 1 through 11 {
+        &:nth-child(#{$i+1}) {
+          animation-delay: #{$i*.1}s;
+        }
+      }
+    }
+  }
+  @keyframes loading04 {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(15px);
+    }
+  }

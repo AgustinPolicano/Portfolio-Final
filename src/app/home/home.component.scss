@@ -1,0 +1,98 @@
+@import '../../colors';
+
+.bg-home{
+  height: 100vh;
+  background-color: $bg;
+}
+
+.container{
+  width: 100%;
+}
+
+.title-home{
+  text-align: center;
+  font-family: "Forturn";
+  color: $white;
+  margin-top: 10rem;
+}
+
+.subtitle-home{
+  font-family: "Hemi";
+  letter-spacing: 3px;
+  margin-top: 1rem;
+
+}
+
+.btn-about-me{
+  all: initial;
+  width: 25%;
+  text-align: center;
+  height: 5vh;
+  border: 3px solid $orange;
+  color: $orange;
+  font-family: 'Hemi';
+  opacity: 1;
+  text-transform: uppercase;
+  position: relative;
+  cursor: pointer;
+}
+
+.container-button-about{
+  width: 100%;
+
+}
+
+.content {
+  position: absolute;
+  left: 50%;
+  margin-top: 350px;
+  transform: translate(-50%, -50%);
+  
+  p {
+    margin: 0 0 20px;
+    position: relative;
+    right: 10px;
+ 
+
+  }
+  
+}
+
+/* Arrow & Hover Animation */
+#more-arrows {
+  width: 75px;
+  height: 65px;
+  
+  &:hover {
+    
+    polygon {
+      fill: #eeeeee;
+      transition: all .2s ease-out;
+
+      &.arrow-bottom {
+        transform: translateY(-18px);
+      }
+
+      &.arrow-top {
+        transform: translateY(18px);
+      }
+      
+    }
+  
+  }
+  
+}
+
+polygon {
+  fill: #eeeeee;
+  transition: all .2s ease-out;
+    
+  &.arrow-middle {
+    opacity: 0.75;
+  }
+
+  &.arrow-top {
+    opacity: 0.5
+  }
+   
+}

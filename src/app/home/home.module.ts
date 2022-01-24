@@ -13,6 +13,7 @@ import { HomeComponent } from './home.component';
     HomeComponent,
     LoadingComponent,
     BackArrowComponent
+
    ],
   imports: [
     BrowserModule,

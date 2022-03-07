@@ -1,9 +1,12 @@
 import { NgModule } from '@angular/core';
 import { RouterModule, Routes } from '@angular/router';
 import { HomeComponent } from './home/home.component';
+import { NahuelP2pComponent } from './nahuel-p2p/nahuel-p2p.component';
 
 const routes: Routes = [
-  { path: '', component: HomeComponent },
+  { path: 'home', component: HomeComponent },
+  { path: 'nahuelP2P', component: NahuelP2pComponent },
+  { path: '',   redirectTo: '/home', pathMatch: 'full' },
 ];
 
 @NgModule({

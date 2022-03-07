@@ -60,37 +60,6 @@
     box-shadow: 0 2px 5px rgba(255,101,47,.2);
     transition: all .5s ease-in-out;
   }
-  .menu-btn__burger2::before,
-.menu-btn__burger2::after {
-  content: '';
-  position: absolute;
-  width: 30px;
-  height: 5px;
-  background: $white;
-  border-radius: 5px;
-  box-shadow: 0 2px 5px rgba(255,101,47,.2);
-  transition: all .5s ease-in-out;
-}
-
-.menu-btn__burger2::before {
-    transform: translateY(-16px);
-  }
-  .menu-btn__burger2::after {
-    transform: translateY(16px);
-  }
-  /* ANIMATION */
-  .menu-btn.open .menu-btn__burger2 {
-    transform: translateX(-50px);
-    background: transparent;
-    box-shadow: none;
-  }
-  .menu-btn.open .menu-btn__burger2::before {
-    transform: rotate(45deg) translate(35px, -35px);
-  }
-  .menu-btn.open .menu-btn__burger2::after {
-    transform: rotate(-45deg) translate(35px, 35px);
-  }
-
 
 
 

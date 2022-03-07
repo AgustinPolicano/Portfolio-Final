@@ -1,5 +1,5 @@
-import { AfterViewInit, Component, ElementRef, EventEmitter, Input, Output, ViewChild } from '@angular/core';
-import { NavbarService } from 'src/app/services/navbar.service';
+import { Component, ElementRef, EventEmitter, Input, Output, ViewChild } from '@angular/core';
+import { ServiceApp } from 'src/app/services/navbar.service';
 
 @Component({
   selector: 'app-navbar-component',
@@ -10,7 +10,7 @@ export class NavbarComponentComponent  {
   @Input() isOpen!: boolean;
   @ViewChild('.menu-btn') classBtn: any;
   @Output() navbarState = new EventEmitter();
-  constructor(private el: ElementRef, private service: NavbarService) {
+  constructor(private el: ElementRef, private service: ServiceApp) {
   }
 
   ngOnInit(): void {

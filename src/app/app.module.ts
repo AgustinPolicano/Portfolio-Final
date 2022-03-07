@@ -5,22 +5,26 @@ import { AppComponent } from './app.component';
 import { HomeModule } from './home/home.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {MatDialogModule} from '@angular/material/dialog';
-import { NavbarService } from './services/navbar.service';
+import { ServiceApp } from './services/navbar.service';
+import { NahuelP2pComponent } from './nahuel-p2p/nahuel-p2p.component';
+import {MatDividerModule} from '@angular/material/divider';
 
 
 @NgModule({
-  declarations: [				
+  declarations: [					
    AppComponent
+      
    ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HomeModule,
     BrowserAnimationsModule,
-    MatDialogModule
+    MatDialogModule,
+    MatDividerModule,
 
   ],
-  providers: [NavbarService],
+  providers: [ServiceApp],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

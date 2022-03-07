@@ -1,7 +1,10 @@
 import { Component, OnInit } from '@angular/core';
 import { MatDialog } from '@angular/material/dialog';
+import { NgxSmoothScroll } from '@eunsatio/ngx-smooth-scroll';
 import { DialogAboutMeComponent } from '../components/dialog-about-me/dialog-about-me.component';
-import { NavbarService } from '../services/navbar.service';
+import { ServiceApp } from '../services/navbar.service';
+import { ParticlesConfig } from '../../assets/particles-config';
+declare let particlesJS: any; // Required to be properly interpreted by TypeScript.
 
 @Component({
   selector: 'app-home',
@@ -9,14 +12,24 @@ import { NavbarService } from '../services/navbar.service';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
-  loading: boolean = false;
+  isLoading!: boolean;
   isOpen!: boolean;
-  constructor(public dialog: MatDialog, private service: NavbarService) {
-    this.isOpen = this.service.isOpen
+  constructor(public dialog: MatDialog, private service: ServiceApp) {
+    this.isOpen = this.service.isOpen;
   }
 
   ngOnInit() {
+    this.invokeParticles();
+    this.isLoading = false
   }
+
+  public invokeParticles(): void {
+    particlesJS('particles-js', ParticlesConfig, function() {});
+  }
+
+
+ setLoading(){
+ }
 
   openDialog(){
     this.dialog.open(DialogAboutMeComponent)
@@ -24,5 +37,9 @@ export class HomeComponent implements OnInit {
 
   changeState(e: any){
     this.isOpen = e
+  }
+
+  toProyects(){
+    document.getElementById('proyectos')?.scrollIntoView({behavior: 'smooth'})
   }
 }

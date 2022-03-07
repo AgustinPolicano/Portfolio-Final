@@ -1,6 +1,12 @@
 @import "../../../colors";
 
 
+.bg-home{
+  height: 100vh;
+  background-color: $bg;
+}
+
+
 .container-loading{
     position: fixed;
     left: 50%;

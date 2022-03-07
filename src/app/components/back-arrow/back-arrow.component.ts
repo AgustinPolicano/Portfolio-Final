@@ -12,4 +12,6 @@ export class BackArrowComponent implements OnInit {
   ngOnInit() {
   }
 
+  
+
 }

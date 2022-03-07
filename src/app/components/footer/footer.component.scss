@@ -1,0 +1,38 @@
+@import "../../../colors";
+
+.bg-footer{
+    background-color: $bg;
+    width: 100%;
+    height: auto;
+    margin-top: 5rem;
+}
+
+.grid-footer{
+    margin-top: 2rem;
+    display: grid;
+    justify-content: center;
+    gap: 1rem;
+    grid-template-columns: auto auto auto;
+}
+
+.img-footer{
+    width: 80%;
+}
+
+.pos-imgs-footer{
+    margin-top: 2rem;
+    width: 5rem;
+}
+
+.text-footer{
+    text-align: center;
+    color: $white;
+    margin-top: 3rem;
+    padding-bottom: 1rem;
+    font-family: "Hemi";
+}
+
+.img-footer:hover{
+    opacity: 0.5;
+    transition: 0.5s;
+}

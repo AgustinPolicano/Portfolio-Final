@@ -1,5 +1,46 @@
 <div *ngIf="isLoading === false">
-  Holaa
+  <div *ngIf="isOpen === false">
+    <div class="bg-image">
+      <app-navbar-component
+        [isOpen]="isOpen"
+        (navbarState)="changeState($event)"
+      ></app-navbar-component>
+      <div class="f60 title-home">
+        Nahuel P2P
+        <p class="subtitle-home f20">
+          Exchange de Cryptomonedas en tiempo real
+        </p>
+      </div>
+      <a (click)="toTitle()">
+        <app-back-arrow></app-back-arrow>
+      </a>
+    </div>
+    <div class="bg-home">
+      <div class="flex-proyectos">
+        <div class="f40 title-projects" id="title-p2p">
+          Sobre la pagina
+          <p class="subtitle-project f16">
+            Esta fue la primera página que hice para un cliente, fue programada en
+            React JS y el hosting fue hecho mediante <span class="texto-orange">Firebase</span>. Con la api de
+            <span class="texto-orange">Cryptomarket</span> logré programar una exchange que hace el
+            cambio de divisas (BTC a USD y ARS) y (USDT a USD y ARS) en tiempo
+            real.
+          </p>
+        </div>
+        <div>
+          <img src="../../assets/img/undraw_financial_data_es63.svg" class="img-proyecto">
+        </div>
+      </div>
+  
+    </div>
+  </div>
+
+  <div *ngIf="isOpen">
+    <app-navbar-component
+      [isOpen]="isOpen"
+      (navbarState)="changeState($event)"
+    ></app-navbar-component>
+  </div>
 </div>
 
 <div *ngIf="isLoading === true">

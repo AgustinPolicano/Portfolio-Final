@@ -8,13 +8,14 @@ import { ServiceApp } from '../services/navbar.service';
 })
 export class NahuelP2pComponent implements OnInit {
   isLoading!: boolean;
+  isOpen!: boolean;
   constructor(private service: ServiceApp) { 
     this.isLoading = true
+    this.isOpen = this.service.isOpen;
   }
 
   ngOnInit() {
     this.service.isInHome()
-    console.log(this.isLoading)
     this.finalizateLoading()
 
   }
@@ -22,11 +23,19 @@ export class NahuelP2pComponent implements OnInit {
   finalizateLoading() {
     setTimeout(() => {
       this.setLoading()
-  }, 5500);
+  }, 200);
+  }
+
+  changeState(e: any){
+    this.isOpen = e
   }
 
   setLoading(){
     this.isLoading = false
+  }
+
+  toTitle(){
+    document.getElementById('title-p2p')?.scrollIntoView({behavior: 'smooth'})
   }
  
 

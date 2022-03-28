@@ -1,38 +1,48 @@
 <div *ngIf="isLoading === false">
-  <div *ngIf="isOpen === false" >
+  <div *ngIf="isOpen === false">
     <div class="bg-home">
-      <app-navbar-component [isOpen]="isOpen" (navbarState)="changeState($event)"></app-navbar-component>
+      <app-navbar-component
+        [isOpen]="isOpen"
+        (navbarState)="changeState($event)"
+      ></app-navbar-component>
       <div class="container">
-          <div class="f60 title-home">
-            Agustin Policano
-            <p class="subtitle-home f20">Programador Front-End</p>
-            <div class="container-button-about">
-                <a><button class="btn-about-me" (click)="openDialog()">¿Quien soy? </button></a>
-            </div>
+        <div class="f60 title-home">
+          Agustin Policano
+          <p class="subtitle-home f20">Programador Front-End</p>
+          <div class="container-button-about">
+            <a
+              ><button class="btn-about-me" (click)="openDialog()">
+                ¿Quien soy?
+              </button></a
+            >
           </div>
-          <div>
-            <a (click)="toProyects()">
-              <app-back-arrow></app-back-arrow>
-            </a>
-          </div>
+        </div>
+        <div>
+          <a (click)="toProyects()">
+            <app-back-arrow></app-back-arrow>
+          </a>
+        </div>
       </div>
     </div>
     <div class="bg-proyectos">
       <app-proyectos id="proyectos"></app-proyectos>
+    </div>
+      <div class="bg-experiencia">
+        <app-experiencia></app-experiencia>
+      </div>
       <app-habilidades></app-habilidades>
       <app-footer></app-footer>
-    </div>
+  </div>
 </div>
-</div>
-
-
 
 <div *ngIf="isOpen === true">
-  <app-navbar-component [isOpen]="isOpen" (navbarState)="changeState($event)"></app-navbar-component>
+  <app-navbar-component
+    [isOpen]="isOpen"
+    (navbarState)="changeState($event)"
+  ></app-navbar-component>
 </div>
 
-
 <div *ngIf="isLoading === true">
-
-    <app-loading></app-loading><!--  -->
+  <app-loading></app-loading
+  ><!--  -->
 </div>

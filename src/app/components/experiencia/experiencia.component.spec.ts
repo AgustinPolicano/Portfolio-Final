@@ -3,21 +3,21 @@ import { async, ComponentFixture, TestBed } from '@angular/core/testing';
 import { By } from '@angular/platform-browser';
 import { DebugElement } from '@angular/core';
 
-import { NahuelP2pComponent } from './nahuel-p2p.component';
+import { ExperienciaComponent } from './experiencia.component';
 
-describe('NahuelP2pComponent', () => {
-  let component: NahuelP2pComponent;
-  let fixture: ComponentFixture<NahuelP2pComponent>;
+describe('ExperienciaComponent', () => {
+  let component: ExperienciaComponent;
+  let fixture: ComponentFixture<ExperienciaComponent>;
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ NahuelP2pComponent ]
+      declarations: [ ExperienciaComponent ]
     })
     .compileComponents();
   }));
 
   beforeEach(() => {
-    fixture = TestBed.createComponent(NahuelP2pComponent);
+    fixture = TestBed.createComponent(ExperienciaComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

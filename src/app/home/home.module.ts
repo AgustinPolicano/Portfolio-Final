@@ -6,10 +6,10 @@ import { HabilidadesComponent } from '../components/habilidades/habilidades.comp
 import { LoadingComponent } from '../components/loading-component/loading.component';
 import { NavbarComponentComponent } from '../components/navbar-component/navbar-component.component';
 import { ProyectosComponent } from '../components/proyectos/proyectos.component';
-import { NahuelP2pComponent } from '../nahuel-p2p/nahuel-p2p.component';
 import { HomeComponent } from './home.component';
 import {MatDividerModule} from '@angular/material/divider';
 import { FooterComponent } from '../components/footer/footer.component';
+import { ExperienciaComponent } from '../components/experiencia/experiencia.component';
 
 @NgModule({
   declarations: [			
@@ -18,9 +18,9 @@ import { FooterComponent } from '../components/footer/footer.component';
     LoadingComponent,
     BackArrowComponent,
     ProyectosComponent,
-    NahuelP2pComponent,
     HabilidadesComponent,
-    FooterComponent
+    FooterComponent,
+    ExperienciaComponent
 
    ],
   imports: [

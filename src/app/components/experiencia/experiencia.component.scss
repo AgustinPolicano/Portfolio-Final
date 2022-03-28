@@ -1,0 +1,41 @@
+@import '../../../colors';
+
+.emotes{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.proyectos-title2{
+    font-family: "Forturn";
+    color: $white;
+    text-align: center;
+    margin-top: 3rem;
+    padding-top: 4rem;
+}
+
+.container-exp{
+    margin-top: 5rem;
+}
+.flex-exp{
+    display: grid;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.buttons-exp{
+    all: initial;
+    text-align: left;
+    width: 100%;
+    padding-left: 1rem;
+
+    cursor: pointer;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    color: $white;
+    font-family: "Hemi";
+    border-left: 2px solid $white;
+}
+
+.hover-bar{
+    border-left: 3px solid $orange;
+}

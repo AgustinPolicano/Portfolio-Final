@@ -11,10 +11,16 @@
     text-align: center;
     margin-top: 3rem;
     padding-top: 4rem;
+    width: auto;
 }
 
 .container-exp{
     margin-top: 5rem;
+    display: grid;
+    flex-direction: row;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    gap: 2rem;
 }
 .flex-exp{
     display: grid;
@@ -29,13 +35,32 @@
     padding-left: 1rem;
 
     cursor: pointer;
-    padding-top: 1rem;
-    padding-bottom: 1rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
     color: $white;
     font-family: "Hemi";
-    border-left: 2px solid $white;
+    border-left: 3px solid $white;
 }
 
 .hover-bar{
     border-left: 3px solid $orange;
+    background-color: #1B1A23;
+    color: $orange
+}
+
+.container-subtitle{
+    color: $white;
+    font-family: "Hemi";
+    padding-top: 1rem;
+}
+
+.subtitle-exp{
+    color: #999999;
+    padding-top: 0.5rem;
+    text-align: center;
+    font-family: "Roboto";
+}
+
+.texto-orange{
+    color: $orange;
 }

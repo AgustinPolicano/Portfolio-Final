@@ -1,10 +1,10 @@
 <div>
   <div class="proyectos-title2 f60 ">
     Experiencia
-    <p class="proyectos-subtitle f20">Experiencia real trabajando para algunas empresas! :D <span class="emotes">&#129308;</span></p>
+    <p class="proyectos-subtitle f20">Experiencia real trabajando para algunas empresas</p>
   </div>
   <div class="container-exp">
-      <div class="flex-exp">
+      <div class="flex-exp f14">
         <div>
           <button class="buttons-exp" (click)="setBanhaia()" [ngClass]="{'hover-bar': isBanhaia === true}">Banhaia</button>
         </div>
@@ -13,6 +13,24 @@
         </div>
         <div>
           <button class="buttons-exp" (click)="setSeenka()" [ngClass]="{'hover-bar': isSeenka === true}">Seenka</button>
+        </div>
+      </div>
+      <div class="container-subtitle f18" *ngIf="isBanhaia">
+        <p>Angular Dev <span class="texto-orange">Banhaia</span></p> 
+        <div class="subtitle-exp f12">
+          <p>May. 2021 - Sept. 2021</p>
+        </div>
+      </div>
+      <div class="container-subtitle f18" *ngIf="isAccusys">
+        <p>Angular Dev<span class="texto-orange"> Accusys</span></p> 
+        <div class="subtitle-exp f12">
+          <p>Oct. 2021 - Actualidad</p>
+        </div>
+      </div>
+      <div class="container-subtitle f18" *ngIf="isSeenka">
+        <p>Angular Dev <span class="texto-orange">Seenka</span></p> 
+        <div class="subtitle-exp f12">
+          <p>Feb. 2022 - Actualidad</p>
         </div>
       </div>
   </div>

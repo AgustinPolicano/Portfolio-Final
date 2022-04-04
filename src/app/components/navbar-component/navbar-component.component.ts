@@ -8,6 +8,7 @@ import { ServiceApp } from 'src/app/services/navbar.service';
 })
 export class NavbarComponentComponent  {
   @Input() isOpen!: boolean;
+  @Input() idHandleado!: any;
   @ViewChild('.menu-btn') classBtn: any;
   @Output() navbarState = new EventEmitter();
   constructor(private el: ElementRef, private service: ServiceApp) {
@@ -21,7 +22,12 @@ export class NavbarComponentComponent  {
     this.isOpen = this.service.isOpen 
     this.navbarState.emit(this.isOpen)
  ;
- 
+
+  }
+
+  toProyects(){
+    this.idHandleado.scrollIntoView({behavior: 'smooth'})
+    console.log(this.idHandleado)
   }
   
 }

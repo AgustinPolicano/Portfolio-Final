@@ -10,6 +10,10 @@ import { HomeComponent } from './home.component';
 import {MatDividerModule} from '@angular/material/divider';
 import { FooterComponent } from '../components/footer/footer.component';
 import { ExperienciaComponent } from '../components/experiencia/experiencia.component';
+import {MatChipsModule} from '@angular/material/chips';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import {MatIconModule} from '@angular/material/icon';
+
 
 @NgModule({
   declarations: [			
@@ -26,7 +30,10 @@ import { ExperienciaComponent } from '../components/experiencia/experiencia.comp
   imports: [
     BrowserModule,
     AppRoutingModule,
-    MatDividerModule
+    MatDividerModule,
+    MatChipsModule,
+    MatFormFieldModule,
+    MatIconModule
   ],
   providers: [],
 })

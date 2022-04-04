@@ -14,6 +14,7 @@ declare let particlesJS: any; // Required to be properly interpreted by TypeScri
 export class HomeComponent implements OnInit {
   isLoading!: boolean;
   isOpen!: boolean;
+  idHandleado!: any
   constructor(public dialog: MatDialog, private service: ServiceApp) {
     this.isOpen = this.service.isOpen;
   }
@@ -40,6 +41,6 @@ export class HomeComponent implements OnInit {
   }
 
   toProyects(){
-    document.getElementById('proyectos')?.scrollIntoView({behavior: 'smooth'})
+    this.idHandleado = document.getElementById('proyectos')?.scrollIntoView({behavior: 'smooth'})
   }
 }

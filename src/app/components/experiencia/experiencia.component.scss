@@ -20,7 +20,7 @@
     flex-direction: row;
     grid-template-columns: auto auto;
     justify-content: center;
-    gap: 2rem;
+    gap: 3.5rem;
 }
 .flex-exp{
     display: grid;
@@ -40,6 +40,11 @@
     color: $white;
     font-family: "Hemi";
     border-left: 3px solid $white;
+}
+
+.buttons-exp:hover{
+    transition: 0.5s;
+    background-color: #35333D;
 }
 
 .hover-bar{
@@ -63,4 +68,18 @@
 
 .texto-orange{
     color: $orange;
+}
+
+.subtitle-icons{
+    text-align: initial;
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: flex-start;
+    gap: 0.5rem;
+    row-gap: 0.5rem;
+}
+
+.texto-sub{
+    max-width: 20rem;
 }

@@ -1,0 +1,94 @@
+<div *ngIf="isLoading === false">
+  <div *ngIf="isOpen === false">
+    <div class="bg-home">
+      <app-navbar-component
+        [isOpen]="isOpen"
+        (navbarState)="changeState($event)"
+        [idHandleado]="idHandleado"
+      ></app-navbar-component>
+      <div class="container">
+        <div class="f60 title-home">
+          Agustin Policano
+          <p class="subtitle-home f20">Programador Front-End</p>
+          <div class="container-button-about">
+            <a
+              ><button class="btn-about-me" (click)="openDialog()">
+                ¿Quien soy?
+              </button></a
+            >
+          </div>
+        </div>
+        <div>
+          <a (click)="toProyects()">
+            <app-back-arrow></app-back-arrow>
+          </a>
+        </div>
+      </div>
+    </div>
+    <div class="bg-proyectos">
+      <app-proyectos id="proyectos"></app-proyectos>
+    </div>
+      <div class="bg-experiencia">
+        <app-experiencia id="experiencia"></app-experiencia>
+      </div>
+      <app-habilidades id="habilidades"></app-habilidades>
+      <app-footer></app-footer>
+  </div>
+</div>
+
+<div *ngIf="isOpen === true" >
+  <div class="bg-menu">
+    <div class="pos-btn">
+      <div class="menu-btn open" (click)="menuLogic()" [ngClass]="{'bg-menu-2': isOpen}" >
+        <div class="menu-btn__burger2" ></div>
+    </div>
+  </div>
+    <div class="flex-menu">
+      <div class="f20 navbar-text">
+        <a (click)="scrollProyectos()">
+          Proyectos
+        </a>
+
+      </div>
+      <hr>
+      <div class="f20 navbar-text">
+        <a (click)="scrollExperiencia()">
+          Experiencia
+        </a>
+      </div>
+      <hr>
+      <div class="f20 navbar-text">
+        <a (click)="scrollHabilidades()">
+          Habilidades
+        </a>
+      </div>
+      <hr>
+      <div class="f20 navbar-text">
+        <a (click)="openDialogNavbar()">
+          Quien Soy
+        </a>
+      </div>
+      <hr>
+      <div class="f20 navbar-text">
+        <a (click)="downloadMyFile()">
+          Descargar CV
+        </a>
+      </div>
+    </div>
+  <div >
+
+  </div>
+
+</div>
+ <!--  <app-navbar-component
+    [isOpen]="isOpen"
+    (navbarState)="changeState($event)"
+    [idHandleado]="idHandleado"
+  ></app-navbar-component> -->
+</div>
+
+<div *ngIf="isLoading === true">
+  <app-loading></app-loading
+  ><!--  -->
+</div>
+

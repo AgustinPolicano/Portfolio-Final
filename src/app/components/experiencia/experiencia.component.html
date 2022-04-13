@@ -1,0 +1,63 @@
+<div>
+  <div class="proyectos-title2 f60 ">
+    Experiencia
+    <p class="proyectos-subtitle f20">Experiencia real trabajando para algunas empresas</p>
+  </div>
+  <div class="container-exp">
+      <div class="flex-exp f14">
+        <div>
+          <button class="buttons-exp" (click)="setBanhaia()" [ngClass]="{'hover-bar': isBanhaia === true}">Banhaia</button>
+        </div>
+        <div>
+          <button class="buttons-exp" (click)="setAccusys()" [ngClass]="{'hover-bar': isAccusys === true}">Accusys Tecnhology</button>
+        </div>
+        <div>
+          <button class="buttons-exp" (click)="setSeenka()" [ngClass]="{'hover-bar': isSeenka === true}">Seenka</button>
+        </div>
+      </div>
+      <div class="container-subtitle f18" *ngIf="isBanhaia">
+        <p style="text-align: center;">Angular Dev <span class="texto-orange">Banhaia</span></p> 
+        <div class="subtitle-exp f12">
+          <p>May. 2021 - Sept. 2021</p>
+          <div class="subtitle-icons">
+            <mat-icon [ngStyle]="{'color':'#faa42d'}" class="f24 icon">verified</mat-icon>
+            <p class="f12 texto-sub">Fue mi primera experiencia real en una empresa. Me capacitaron como programador en Angular (V8), me enseñaron las bases y fundamentos
+              para ser un buen programador.
+            </p>
+            <mat-icon [ngStyle]="{'color':'#faa42d'}" class="f24 icon">verified</mat-icon> 
+            <p class="f12 texto-sub">
+              Aprendi sobre el uso de Git, metolodogias SCRUM, entre otras cosas y lo más importante, trabajar en equipo. 
+            </p>
+            <mat-icon [ngStyle]="{'color':'#faa42d'}" class="f24 icon">verified</mat-icon> 
+            <p class="f12 texto-sub">
+             Contribuí con varias partes de la interfaz mediante la creación de los mismos mediante Figma.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="container-subtitle f18" *ngIf="isAccusys">
+        <p style="text-align: center;">Angular Dev<span class="texto-orange"> Accusys</span></p> 
+        <div class="subtitle-exp f12">
+          <p>Oct. 2021 - Actualidad</p>
+          <div class="subtitle-icons">
+            <mat-icon [ngStyle]="{'color':'#faa42d'}" class="f24 icon">verified</mat-icon>
+            <p class="f12 texto-sub">Fue mi primera experiencia real en una empresa. Me capacitaron como programador en Angular (V8), me enseñaron las bases y fundamentos
+              para ser un buen programador.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div class="container-subtitle f18" *ngIf="isSeenka">
+        <p style="text-align: center;">Angular Dev <span class="texto-orange">Seenka</span></p> 
+        <div class="subtitle-exp f12">
+          <p>Feb. 2022 - Actualidad</p>
+          <div class="subtitle-icons">
+            <mat-icon [ngStyle]="{'color':'#faa42d'}" class="f24 icon">verified</mat-icon>
+            <p class="f12 texto-sub">Prueba de texto</p>
+          </div>
+        </div>
+      </div>
+      
+  </div>
+
+</div>

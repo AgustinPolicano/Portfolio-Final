@@ -1,0 +1,85 @@
+@import '../../../colors';
+
+.emotes{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.proyectos-title2{
+    font-family: "Forturn";
+    color: $white;
+    text-align: center;
+    margin-top: 3rem;
+    padding-top: 4rem;
+    width: auto;
+}
+
+.container-exp{
+    margin-top: 5rem;
+    display: grid;
+    flex-direction: row;
+    grid-template-columns: auto auto;
+    justify-content: center;
+    gap: 3.5rem;
+}
+.flex-exp{
+    display: grid;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.buttons-exp{
+    all: initial;
+    text-align: left;
+    width: 100%;
+    padding-left: 1rem;
+
+    cursor: pointer;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    color: $white;
+    font-family: "Hemi";
+    border-left: 3px solid $white;
+}
+
+.buttons-exp:hover{
+    transition: 0.5s;
+    background-color: #35333D;
+}
+
+.hover-bar{
+    border-left: 3px solid $orange;
+    background-color: #1B1A23;
+    color: $orange
+}
+
+.container-subtitle{
+    color: $white;
+    font-family: "Hemi";
+    padding-top: 1rem;
+}
+
+.subtitle-exp{
+    color: #999999;
+    padding-top: 0.5rem;
+    text-align: center;
+    font-family: "Roboto";
+}
+
+.texto-orange{
+    color: $orange;
+}
+
+.subtitle-icons{
+    text-align: initial;
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: auto auto;
+    justify-content: flex-start;
+    gap: 0.5rem;
+    row-gap: 0.5rem;
+}
+
+.texto-sub{
+    max-width: 20rem;
+}

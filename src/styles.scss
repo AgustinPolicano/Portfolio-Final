@@ -1,0 +1,168 @@
+// Custom Theming for Angular Material
+// For more information: https://material.angular.io/guide/theming
+@use "~@angular/material" as mat;
+// Plus imports for other components in your app.
+
+// Include the common styles for Angular Material. We include this here so that you only
+// have to load a single css file for Angular Material in your app.
+// Be sure that you only ever include this mixin once!
+@include mat.core();
+
+// Define the palettes for your theme using the Material Design palettes available in palette.scss
+// (imported above). For each palette, you can optionally specify a default, lighter, and darker
+// hue. Available color palettes: https://material.io/design/color/
+$lilocode-primary: mat.define-palette(mat.$indigo-palette);
+$lilocode-accent: mat.define-palette(mat.$pink-palette, A200, A100, A400);
+
+// The warn palette is optional (defaults to red).
+$lilocode-warn: mat.define-palette(mat.$red-palette);
+
+// Create the theme object. A theme consists of configurations for individual
+// theming systems such as "color" or "typography".
+$lilocode-theme: mat.define-light-theme(
+  (
+    color: (
+      primary: $lilocode-primary,
+      accent: $lilocode-accent,
+      warn: $lilocode-warn,
+    ),
+  )
+);
+
+// Include theme styles for core and each component used in your app.
+// Alternatively, you can import and @include the theme mixins for each component
+// that you are using.
+@include mat.all-component-themes($lilocode-theme);
+
+@import "./colors";
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+font,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+caption {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+  scroll-behavior: smooth;
+}
+
+//fonts
+
+@font-face {
+  font-family: "Forturn";
+  src: url("./assets/fonts/Forturn.otf");
+}
+@font-face {
+  font-family: "Hemi";
+  src: url("./assets/fonts/hemi-head-426.bold-italic.ttf");
+}
+
+.f60 {
+  font-size: 5rem;
+}
+
+.f40 {
+  font-size: 4rem;
+}
+
+.f30 {
+  font-size: 2rem;
+}
+
+.f24 {
+  font-size: 1.5rem;
+}
+
+.f20 {
+  font-size: 1.3rem;
+}
+
+.f18 {
+  font-size: 1.3rem;
+}
+
+.f16 {
+  font-size: 1rem;
+}
+
+.f12 {
+  font-size: 0.8rem;
+}
+
+.proyectos-title {
+  font-family: "Forturn";
+  color: $bg;
+  text-align: center;
+  padding-top: 4rem;
+}
+
+.proyectos-subtitle {
+  font-family: "Hemi";
+  color: $orange;
+  margin-top: 1rem;
+}
+
+html,
+body {
+  height: 100%;
+  background-color: $white;
+}
+body {
+  margin: 0;
+  font-family: Roboto, "Helvetica Neue", sans-serif;
+}

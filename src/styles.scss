@@ -166,3 +166,41 @@ body {
   margin: 0;
   font-family: Roboto, "Helvetica Neue", sans-serif;
 }
+
+
+@media (min-width: 1200px) and (max-width: 1480px) { 
+  .f40{
+    font-size: 3.5rem;
+  }
+  .f20{
+    font-size: 1rem;
+  }
+  .f18{
+    font-size: 1rem;
+  }
+} 
+
+@media (min-width: 1000px) and (max-width: 1200px) { 
+  .f60{
+    font-size: 4rem;
+  }
+  .f20{
+    font-size: 1rem;
+  }
+  .f18{
+    font-size: 1rem;
+  }
+} 
+
+@media (max-width: 900px) {
+  .f60{
+    font-size: 3.5rem;
+  }
+  .f20{
+    font-size: 1rem;
+  }
+  .f18{
+    font-size: 1rem;
+  }
+ }
+

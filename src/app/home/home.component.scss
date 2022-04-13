@@ -224,3 +224,27 @@ letter-spacing: 3.5px;
     cursor: pointer;
   }
 }
+
+
+@media (min-width: 1000px) and (max-width: 1200px) { 
+.title-home{
+  margin-top: 3rem;
+}
+.btn-about-me{
+  width: 30%;
+  height: 7vh;
+}
+.bg-experiencia{
+  background-color: $bg;
+  width: auto;
+  height: 90vh;
+}
+
+} 
+
+@media (max-width: 900px) {
+  .btn-about-me{
+    width: 70%;
+    height: 7vh;
+  }
+}

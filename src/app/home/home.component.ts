@@ -21,15 +21,22 @@ export class HomeComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.invokeParticles();
-    this.isLoading = false;
+    this.isLoading = true
+    document.addEventListener('DOMContentLoaded', (event) => {
+      setTimeout(() => {
+        this.setLoading()
+        this.invokeParticles();
+      }, 2500)
+    })
   }
 
   public invokeParticles(): void {
     particlesJS('particles-js', ParticlesConfig, function () {});
   }
 
-  setLoading() {}
+  setLoading() {
+    this.isLoading = false
+  }
 
   openDialog() {
     this.dialog.open(DialogAboutMeComponent);
@@ -48,7 +55,6 @@ export class HomeComponent implements OnInit {
     document
       .getElementById('proyectos')
       ?.scrollIntoView({ behavior: 'smooth' });
-    console.log(this.proyectos.nativeElement);
   }
 
   scrollProyectos() {

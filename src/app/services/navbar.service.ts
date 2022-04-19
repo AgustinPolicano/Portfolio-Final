@@ -24,7 +24,6 @@ export class ServiceApp {
   handleLoading() {
     if (this.isLoading) {
       this.isLoading = false;
-      console.log(this.isLoading);
     } else {
       this.isLoading = false;
     }

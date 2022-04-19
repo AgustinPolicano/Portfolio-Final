@@ -36,3 +36,10 @@
     opacity: 0.5;
     transition: 0.5s;
 }
+
+@media (max-width: 900px) {
+    .img-footer{
+        width: 90%;
+    }
+  
+  }

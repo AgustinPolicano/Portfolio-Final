@@ -8,7 +8,8 @@
 .bg-experiencia{
   background-color: $bg;
   width: auto;
-  height: 75vh;
+  height: auto;
+  padding-bottom: 6rem;
 }
 
 .container{
@@ -133,7 +134,7 @@ polygon {
 
 .menu-btn__burger {
   width: 30px;
-  height: 5px;
+  height: 4px;
   background: $bg;
   border-radius: 5px;
   box-shadow: 0 2px 5px rgba(255,101,47,.2);
@@ -144,7 +145,7 @@ polygon {
 content: '';
 position: absolute;
 width: 30px;
-height: 5px;
+height: 4px;
 background: $bg;
 border-radius: 5px;
 box-shadow: 0 2px 5px rgba(255,101,47,.2);
@@ -172,7 +173,7 @@ transition: all .5s ease-in-out;
 
 .menu-btn__burger2 {
   width: 30px;
-  height: 5px;
+  height: 4px;
   background: $white;
   border-radius: 5px;
   box-shadow: 0 2px 5px rgba(255,101,47,.2);
@@ -206,6 +207,7 @@ transition: all .5s ease-in-out;
   justify-content: center;
   flex-direction: column;
   align-items: center;
+  height: 60vh;
 }
 
 hr{
@@ -237,7 +239,8 @@ letter-spacing: 3.5px;
 .bg-experiencia{
   background-color: $bg;
   width: auto;
-  height: 90vh;
+  height: auto;
+  padding-bottom: 4rem;
 }
 
 } 
@@ -247,4 +250,20 @@ letter-spacing: 3.5px;
     width: 70%;
     height: 7vh;
   }
+  .pos-btn{
+    display: flex;
+    justify-content: flex-end;
+    padding-top: 2rem;
+    position: relative;
+    right: 20px;
+    width: 100%;
+}
+.bg-experiencia{
+  background-color: $bg;
+  width: auto;
+  height: auto;
+  padding-bottom: 2rem;
+}
+
+
 }

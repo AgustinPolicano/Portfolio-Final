@@ -1,111 +1,133 @@
 @import "../../../colors";
 
 .outer {
-    position: relative;
-    margin-left: auto;
+  position: relative;
+  margin-left: auto;
+  width: 3rem;
+  cursor: pointer;
+  align-self: flex-start;
+}
+
+.inner {
+  width: inherit;
+  text-align: center;
+}
+
+label {
+  font-size: 0.8em;
+  line-height: 4em;
+  text-transform: uppercase;
+  color: $bg;
+  transition: all 0.3s ease-in;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.inner:before,
+.inner:after {
+  position: absolute;
+  content: "";
+  height: 1px;
+  width: inherit;
+  background: $bg;
+  left: 0;
+  transition: all 0.3s ease-in;
+}
+
+.inner:before {
+  top: 50%;
+  transform: rotate(45deg);
+}
+
+.inner:after {
+  bottom: 50%;
+  transform: rotate(-45deg);
+}
+
+.outer:hover label {
+  opacity: 1;
+}
+
+.outer:hover .inner:before,
+.outer:hover .inner:after {
+  transform: rotate(0);
+}
+
+.outer:hover .inner:before {
+  top: 0;
+}
+
+.outer:hover .inner:after {
+  bottom: 0;
+}
+
+.container-dialog {
+  width: auto;
+  max-width: 500px;
+  height: auto;
+  padding: 20px;
+}
+
+.title-dialog {
+  color: $orange;
+  font-family: "Forturn";
+}
+
+.subtitle-dialog {
+  color: $bg;
+  font-family: "Hemi";
+  letter-spacing: 2px;
+}
+.description-dialog {
+  color: $bg;
+  font-family: "Roboto";
+  font-weight: 200;
+  margin-top: 1rem;
+  max-width: 400px;
+}
+
+span {
+  color: $orange;
+  font-weight: 500;
+}
+
+.flex-dialog {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+}
+
+.flex-dialog-footer {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  margin-top: 3rem;
+}
+
+.img-dialog-footer {
+  width: 6rem;
+}
+.close-mobile{
+  display: none;
+}
+
+@media (max-width: 900px) {
+  .f40 {
+    font-size: 2rem;
+  }
+  .f16 {
+    font-size: 14px;
+  }
+  .img-dialog-footer {
     width: 3rem;
-    cursor: pointer;
-    align-self: flex-start;
   }
-  
-  .inner {
-    width: inherit;
-    text-align: center;
-   
+  .flex-dialog {
+    justify-content: flex-start;
   }
-  
-  label { 
-    font-size: .8em; 
-    line-height: 4em;
-    text-transform: uppercase;
-    color: $bg;
-    transition: all .3s ease-in;
-    opacity: 0;
-    cursor: pointer;
+  .outer {
+    display: none;
   }
-  
-  .inner:before, .inner:after {
-    position: absolute;
-    content: '';
-    height: 1px;
-    width: inherit;
-    background: $bg;
-    left: 0;
-    transition: all .3s ease-in;
+  .close-mobile{
+    display: none  ;
   }
-  
-  .inner:before {
-    top: 50%; 
-    transform: rotate(45deg);  
-  }
-  
-  .inner:after {  
-    bottom: 50%;
-    transform: rotate(-45deg);  
-  }
-  
-  .outer:hover label {
-    opacity: 1;
-  }
-  
-  .outer:hover .inner:before,
-  .outer:hover .inner:after {
-    transform: rotate(0);
-  }
-  
-  .outer:hover .inner:before {
-    top: 0;
-  }
-  
-  .outer:hover .inner:after {
-    bottom: 0;
-  }
-  
-.container-dialog{
-    width: auto;
-    max-width: 500px;
-    height: auto;
-    padding: 20px;
-
-}
-
-.title-dialog{
-    color: $orange;
-    font-family: "Forturn";
-
-}
-
-.subtitle-dialog{
-    color: $bg;
-    font-family: "Hemi";
-    letter-spacing: 2px;
-}
-.description-dialog{
-    color: $bg;
-    font-family: "Roboto";
-    font-weight: 200;
-    margin-top: 1rem;
-
-}
-
-span{
-    color: $orange;
-    font-weight: 500;
-}
-
-.flex-dialog{
-    display: flex;
-    justify-content: space-around;
-    flex-direction: row;
-}
-
-.flex-dialog-footer{
-    display: flex;
-    justify-content: space-between;
-    flex-direction: row;
-    margin-top: 3rem;
-}
-
-.img-dialog-footer{
-    width: 6rem;
 }

@@ -155,6 +155,7 @@ caption {
   font-family: "Hemi";
   color: $orange;
   margin-top: 1rem;
+  font-size: 1.5rem;
 }
 
 html,
@@ -172,6 +173,9 @@ body {
   .f40{
     font-size: 3.5rem;
   }
+  .f24{
+    font-size: 1.5rem;
+  }
   .f20{
     font-size: 1rem;
   }
@@ -184,6 +188,12 @@ body {
   .f60{
     font-size: 4rem;
   }
+  .f40{
+    font-size: 3rem;
+  }
+  .f24{
+    font-size: 1.3rem;
+  }
   .f20{
     font-size: 1rem;
   }
@@ -195,6 +205,12 @@ body {
 @media (max-width: 900px) {
   .f60{
     font-size: 3.5rem;
+  }
+  .f40{
+    font-size: 3.5rem;
+  }
+  .f24{
+    font-size: 1.3rem;
   }
   .f20{
     font-size: 1rem;

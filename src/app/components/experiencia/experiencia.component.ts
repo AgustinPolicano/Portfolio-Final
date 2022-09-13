@@ -9,6 +9,7 @@ export class ExperienciaComponent implements OnInit {
   isBanhaia : boolean = true
   isAccusys: boolean = false
   isSeenka: boolean = false
+  isQubik: boolean = false
   constructor() { }
 
   ngOnInit() {
@@ -19,15 +20,17 @@ export class ExperienciaComponent implements OnInit {
       this.isBanhaia = true
       this.isAccusys = false
       this.isSeenka = false
-    } 
+      this.isQubik = false
+    }
   }
-  
+
   setAccusys(){
     if(!this.isAccusys){
       this.isAccusys = true
       this.isBanhaia = false
       this.isSeenka = false
-    } 
+      this.isQubik = false
+    }
   }
 
   setSeenka(){
@@ -35,6 +38,15 @@ export class ExperienciaComponent implements OnInit {
       this.isAccusys = false
       this.isBanhaia = false
       this.isSeenka = true
-    } 
+      this.isQubik = false
+    }
+  }
+  setQubik(){
+    if(!this.isQubik){
+      this.isAccusys = false
+      this.isBanhaia = false
+      this.isSeenka = false
+      this.isQubik = true
+    }
   }
 }

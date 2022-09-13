@@ -14,9 +14,12 @@
         <div>
           <button class="buttons-exp" (click)="setSeenka()" [ngClass]="{'hover-bar': isSeenka === true}">Seenka</button>
         </div>
+        <div>
+          <button class="buttons-exp" (click)="setQubik()" [ngClass]="{'hover-bar': isQubik === true}">Qubik Digital</button>
+        </div>
       </div>
       <div class="container-subtitle f18" *ngIf="isBanhaia">
-        <p style="text-align: center;">Angular Dev <span class="texto-orange">Banhaia</span></p> 
+        <p style="text-align: center;">Angular Dev <span class="texto-orange">Banhaia</span></p>
         <div class="subtitle-exp f12">
           <p>May. 2021 - Sept. 2021</p>
           <div class="subtitle-icons">
@@ -24,11 +27,11 @@
             <p class="f12 texto-sub">Fue mi primera experiencia real en una empresa. Me capacitaron como programador en Angular (V8), me enseñaron las bases y fundamentos
               para ser un buen programador.
             </p>
-            <mat-icon [ngStyle]="{'color':'#faa42d'}" class="f24 icon">verified</mat-icon> 
+            <mat-icon [ngStyle]="{'color':'#faa42d'}" class="f24 icon">verified</mat-icon>
             <p class="f12 texto-sub">
-              Aprendi sobre el uso de Git, metolodogias SCRUM, entre otras cosas y lo más importante, trabajar en equipo. 
+              Aprendi sobre el uso de Git, metolodogias SCRUM, entre otras cosas y lo más importante, trabajar en equipo.
             </p>
-            <mat-icon [ngStyle]="{'color':'#faa42d'}" class="f24 icon">verified</mat-icon> 
+            <mat-icon [ngStyle]="{'color':'#faa42d'}" class="f24 icon">verified</mat-icon>
             <p class="f12 texto-sub">
              Contribuí con varias partes de la interfaz mediante la creación de los mismos mediante Figma.
             </p>
@@ -36,9 +39,9 @@
         </div>
       </div>
       <div class="container-subtitle f18" *ngIf="isAccusys">
-        <p style="text-align: center;">Angular Dev<span class="texto-orange"> Accusys</span></p> 
+        <p style="text-align: center;">Angular Dev<span class="texto-orange"> Accusys</span></p>
         <div class="subtitle-exp f12">
-          <p>Oct. 2021 - Actualidad</p>
+          <p>Oct. 2021 - Abr. 2022</p>
           <div class="subtitle-icons">
             <mat-icon [ngStyle]="{'color':'#faa42d'}" class="f24 icon">verified</mat-icon>
             <p class="f12 texto-sub">Este es uno de mis actuales trabajos, utilizamos la metodologia SCRUM para que el trabajo diario tenga un mejor registro tanto para nuestro PM y para nosotros, el equipo encargado del proyecto.
@@ -53,12 +56,12 @@
         </div>
       </div>
       <div class="container-subtitle f18" *ngIf="isSeenka">
-        <p style="text-align: center;">Angular Dev <span class="texto-orange">Seenka</span></p> 
+        <p style="text-align: center;">Angular Dev <span class="texto-orange">Seenka</span></p>
         <div class="subtitle-exp f12">
-          <p>Feb. 2022 - Actualidad</p>
+          <p>Feb. 2022 - Abril. 2022</p>
           <div class="subtitle-icons">
             <mat-icon [ngStyle]="{'color':'#faa42d'}" class="f24 icon">verified</mat-icon>
-            <p class="f12 texto-sub">Otro de mis trabajos actuales, también utilizamos la metodologia SCRUM mediante el trabajo asignado por tickets.
+            <p class="f12 texto-sub">Trabaje de manera freelance para ellos, también utilizamos la metodologia SCRUM mediante el trabajo asignado por tickets.
             </p>
             <mat-icon [ngStyle]="{'color':'#faa42d'}" class="f24 icon">verified</mat-icon>
             <p class="f12 texto-sub">Es un único proyecto en el cual trabajo en conjunto al encargado del front. Es un proyecto de marketing para empresas, usamos una arquitectura de Micro-Servicios con GraphQL.
@@ -69,7 +72,24 @@
           </div>
         </div>
       </div>
-      
+      <div class="container-subtitle f18" *ngIf="isQubik">
+        <p style="text-align: center;">Angular Dev SAP<span class="texto-orange"> Qubik Digital</span></p>
+        <div class="subtitle-exp f12">
+          <p>May. 2022 - Actualidad</p>
+          <div class="subtitle-icons">
+            <mat-icon [ngStyle]="{'color':'#faa42d'}" class="f24 icon">verified</mat-icon>
+            <p class="f12 texto-sub">Trabaje de manera freelance para ellos, también utilizamos la metodologia SCRUM mediante el trabajo asignado por tickets.
+            </p>
+            <mat-icon [ngStyle]="{'color':'#faa42d'}" class="f24 icon">verified</mat-icon>
+            <p class="f12 texto-sub">Es un único proyecto en el cual trabajo en conjunto al encargado del front. Es un proyecto de marketing para empresas, usamos una arquitectura de Micro-Servicios con GraphQL.
+            </p>
+            <mat-icon [ngStyle]="{'color':'#faa42d'}" class="f24 icon">verified</mat-icon>
+            <p class="f12 texto-sub">El proyecto corre actualmente en Angular (V9), manejamos los repositorios mediante Gitlab y usamos Notion para todo lo que es documetación y tickets.
+            </p>
+          </div>
+        </div>
+      </div>
+
   </div>
 
   <div class="container-exp-mobile">
@@ -83,9 +103,12 @@
       <div>
         <button class="buttons-exp-mobile" (click)="setSeenka()" [ngClass]="{'hover-bar-mobile': isSeenka === true}">Seenka</button>
       </div>
+      <div>
+        <button class="buttons-exp-mobile" (click)="setQubik()" [ngClass]="{'hover-bar-mobile': isQubik === true}">Qubik Digital</button>
+      </div>
     </div>
     <div class="container-subtitle f18" *ngIf="isBanhaia">
-      <p style="text-align: center;">Angular Dev <span class="texto-orange">Banhaia</span></p> 
+      <p style="text-align: center;">Angular Dev <span class="texto-orange">Banhaia</span></p>
       <div class="subtitle-exp f12">
         <p>May. 2021 - Sept. 2021</p>
         <div class="subtitle-icons">
@@ -93,11 +116,11 @@
           <p class="f12 texto-sub">Fue mi primera experiencia real en una empresa. Me capacitaron como programador en Angular (V8), me enseñaron las bases y fundamentos
             para ser un buen programador.
           </p>
-          <mat-icon [ngStyle]="{'color':'#faa42d'}" class="f24 icon">verified</mat-icon> 
+          <mat-icon [ngStyle]="{'color':'#faa42d'}" class="f24 icon">verified</mat-icon>
           <p class="f12 texto-sub">
-            Aprendi sobre el uso de Git, metolodogias SCRUM, entre otras cosas y lo más importante, trabajar en equipo. 
+            Aprendi sobre el uso de Git, metolodogias SCRUM, entre otras cosas y lo más importante, trabajar en equipo.
           </p>
-          <mat-icon [ngStyle]="{'color':'#faa42d'}" class="f24 icon">verified</mat-icon> 
+          <mat-icon [ngStyle]="{'color':'#faa42d'}" class="f24 icon">verified</mat-icon>
           <p class="f12 texto-sub">
            Contribuí con varias partes de la interfaz mediante la creación de los mismos mediante Figma.
           </p>
@@ -105,9 +128,9 @@
       </div>
     </div>
     <div class="container-subtitle f18" *ngIf="isAccusys">
-      <p style="text-align: center;">Angular Dev<span class="texto-orange"> Accusys</span></p> 
+      <p style="text-align: center;">Angular Dev<span class="texto-orange"> Accusys</span></p>
       <div class="subtitle-exp f12">
-        <p>Oct. 2021 - Actualidad</p>
+        <p>Oct. 2021 - Abr. 2022</p>
         <div class="subtitle-icons">
           <mat-icon [ngStyle]="{'color':'#faa42d'}" class="f24 icon">verified</mat-icon>
           <p class="f12 texto-sub">Este es uno de mis actuales trabajos, utilizamos la metodologia SCRUM para que el trabajo diario tenga un mejor registro tanto para nuestro PM y para nosotros, el equipo encargado del proyecto.
@@ -122,7 +145,7 @@
       </div>
     </div>
     <div class="container-subtitle f18" *ngIf="isSeenka">
-      <p style="text-align: center;">Angular Dev <span class="texto-orange">Seenka</span></p> 
+      <p style="text-align: center;">Angular Dev <span class="texto-orange">Seenka</span></p>
       <div class="subtitle-exp f12">
         <p>Feb. 2022 - Actualidad</p>
         <div class="subtitle-icons">
@@ -138,7 +161,7 @@
         </div>
       </div>
     </div>
-    
+
 </div>
 
 </div>

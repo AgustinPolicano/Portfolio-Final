@@ -1,167 +1,347 @@
 <div>
-  <div class="proyectos-title2 f60 ">
+  <div class="proyectos-title2 f60">
     Experiencia
-    <p class="proyectos-subtitle f20">Experiencia real trabajando para algunas empresas</p>
+    <p class="proyectos-subtitle f20">
+      Experiencia real trabajando para algunas empresas
+    </p>
   </div>
   <div class="container-exp">
-      <div class="flex-exp f14">
-        <div>
-          <button class="buttons-exp" (click)="setBanhaia()" [ngClass]="{'hover-bar': isBanhaia === true}">Banhaia</button>
-        </div>
-        <div>
-          <button class="buttons-exp" (click)="setAccusys()" [ngClass]="{'hover-bar': isAccusys === true}">Accusys Tecnhology</button>
-        </div>
-        <div>
-          <button class="buttons-exp" (click)="setSeenka()" [ngClass]="{'hover-bar': isSeenka === true}">Seenka</button>
-        </div>
-        <div>
-          <button class="buttons-exp" (click)="setQubik()" [ngClass]="{'hover-bar': isQubik === true}">Qubik Digital</button>
-        </div>
-      </div>
-      <div class="container-subtitle f18" *ngIf="isBanhaia">
-        <p style="text-align: center;">Angular Dev <span class="texto-orange">Banhaia</span></p>
-        <div class="subtitle-exp f12">
-          <p>May. 2021 - Sept. 2021</p>
-          <div class="subtitle-icons">
-            <mat-icon [ngStyle]="{'color':'#faa42d'}" class="f24 icon">verified</mat-icon>
-            <p class="f12 texto-sub">Fue mi primera experiencia real en una empresa. Me capacitaron como programador en Angular (V8), me enseñaron las bases y fundamentos
-              para ser un buen programador.
-            </p>
-            <mat-icon [ngStyle]="{'color':'#faa42d'}" class="f24 icon">verified</mat-icon>
-            <p class="f12 texto-sub">
-              Aprendi sobre el uso de Git, metolodogias SCRUM, entre otras cosas y lo más importante, trabajar en equipo.
-            </p>
-            <mat-icon [ngStyle]="{'color':'#faa42d'}" class="f24 icon">verified</mat-icon>
-            <p class="f12 texto-sub">
-             Contribuí con varias partes de la interfaz mediante la creación de los mismos mediante Figma.
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="container-subtitle f18" *ngIf="isAccusys">
-        <p style="text-align: center;">Angular Dev<span class="texto-orange"> Accusys</span></p>
-        <div class="subtitle-exp f12">
-          <p>Oct. 2021 - Abr. 2022</p>
-          <div class="subtitle-icons">
-            <mat-icon [ngStyle]="{'color':'#faa42d'}" class="f24 icon">verified</mat-icon>
-            <p class="f12 texto-sub">Este es uno de mis actuales trabajos, utilizamos la metodologia SCRUM para que el trabajo diario tenga un mejor registro tanto para nuestro PM y para nosotros, el equipo encargado del proyecto.
-            </p>
-            <mat-icon [ngStyle]="{'color':'#faa42d'}" class="f24 icon">verified</mat-icon>
-            <p class="f12 texto-sub"> La empresa es una Software Factory, en donde es usual rotar de proyecto a proyecto. Actualmente me encuentro realizando una aplicación para los bancos.
-            </p>
-            <mat-icon [ngStyle]="{'color':'#faa42d'}" class="f24 icon">verified</mat-icon>
-            <p class="f12 texto-sub"> Usamos Angular (V11), manejamos los repositorios mediante TFS 2018, usamos Git para el manejo de las ramas.
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="container-subtitle f18" *ngIf="isSeenka">
-        <p style="text-align: center;">Angular Dev <span class="texto-orange">Seenka</span></p>
-        <div class="subtitle-exp f12">
-          <p>Feb. 2022 - Abril. 2022</p>
-          <div class="subtitle-icons">
-            <mat-icon [ngStyle]="{'color':'#faa42d'}" class="f24 icon">verified</mat-icon>
-            <p class="f12 texto-sub">Trabaje de manera freelance para ellos, también utilizamos la metodologia SCRUM mediante el trabajo asignado por tickets.
-            </p>
-            <mat-icon [ngStyle]="{'color':'#faa42d'}" class="f24 icon">verified</mat-icon>
-            <p class="f12 texto-sub">Es un único proyecto en el cual trabajo en conjunto al encargado del front. Es un proyecto de marketing para empresas, usamos una arquitectura de Micro-Servicios con GraphQL.
-            </p>
-            <mat-icon [ngStyle]="{'color':'#faa42d'}" class="f24 icon">verified</mat-icon>
-            <p class="f12 texto-sub">El proyecto corre actualmente en Angular (V9), manejamos los repositorios mediante Gitlab y usamos Notion para todo lo que es documetación y tickets.
-            </p>
-          </div>
-        </div>
-      </div>
-      <div class="container-subtitle f18" *ngIf="isQubik">
-        <p style="text-align: center;">Angular Dev SAP<span class="texto-orange"> Qubik Digital</span></p>
-        <div class="subtitle-exp f12">
-          <p>May. 2022 - Actualidad</p>
-          <div class="subtitle-icons">
-            <mat-icon [ngStyle]="{'color':'#faa42d'}" class="f24 icon">verified</mat-icon>
-            <p class="f12 texto-sub">Trabaje de manera freelance para ellos, también utilizamos la metodologia SCRUM mediante el trabajo asignado por tickets.
-            </p>
-            <mat-icon [ngStyle]="{'color':'#faa42d'}" class="f24 icon">verified</mat-icon>
-            <p class="f12 texto-sub">Es un único proyecto en el cual trabajo en conjunto al encargado del front. Es un proyecto de marketing para empresas, usamos una arquitectura de Micro-Servicios con GraphQL.
-            </p>
-            <mat-icon [ngStyle]="{'color':'#faa42d'}" class="f24 icon">verified</mat-icon>
-            <p class="f12 texto-sub">El proyecto corre actualmente en Angular (V9), manejamos los repositorios mediante Gitlab y usamos Notion para todo lo que es documetación y tickets.
-            </p>
-          </div>
-        </div>
-      </div>
-
-  </div>
-
-  <div class="container-exp-mobile">
-    <div class="flex-exp-mobile f14">
+    <div class="flex-exp f14">
       <div>
-        <button class="buttons-exp-mobile" (click)="setBanhaia()" [ngClass]="{'hover-bar-mobile': isBanhaia === true}">Banhaia</button>
+        <button
+          class="buttons-exp"
+          (click)="setBanhaia()"
+          [ngClass]="{ 'hover-bar': isBanhaia === true }"
+        >
+          Banhaia
+        </button>
       </div>
       <div>
-        <button class="buttons-exp-mobile" (click)="setAccusys()" [ngClass]="{'hover-bar-mobile': isAccusys === true}">Accusys Tecnhology</button>
+        <button
+          class="buttons-exp"
+          (click)="setAccusys()"
+          [ngClass]="{ 'hover-bar': isAccusys === true }"
+        >
+          Accusys Tecnhology
+        </button>
       </div>
       <div>
-        <button class="buttons-exp-mobile" (click)="setSeenka()" [ngClass]="{'hover-bar-mobile': isSeenka === true}">Seenka</button>
+        <button
+          class="buttons-exp"
+          (click)="setSeenka()"
+          [ngClass]="{ 'hover-bar': isSeenka === true }"
+        >
+          Seenka
+        </button>
       </div>
       <div>
-        <button class="buttons-exp-mobile" (click)="setQubik()" [ngClass]="{'hover-bar-mobile': isQubik === true}">Qubik Digital</button>
+        <button
+          class="buttons-exp"
+          (click)="setQubik()"
+          [ngClass]="{ 'hover-bar': isQubik === true }"
+        >
+          Qubik Digital
+        </button>
       </div>
     </div>
     <div class="container-subtitle f18" *ngIf="isBanhaia">
-      <p style="text-align: center;">Angular Dev <span class="texto-orange">Banhaia</span></p>
+      <p style="text-align: center">
+        Angular Dev <span class="texto-orange">Banhaia</span>
+      </p>
       <div class="subtitle-exp f12">
         <p>May. 2021 - Sept. 2021</p>
         <div class="subtitle-icons">
-          <mat-icon [ngStyle]="{'color':'#faa42d'}" class="f24 icon">verified</mat-icon>
-          <p class="f12 texto-sub">Fue mi primera experiencia real en una empresa. Me capacitaron como programador en Angular (V8), me enseñaron las bases y fundamentos
+          <mat-icon [ngStyle]="{ color: '#faa42d' }" class="f24 icon"
+            >verified</mat-icon
+          >
+          <p class="f12 texto-sub">
+            Fue mi primera experiencia real en una empresa. Me capacitaron como
+            programador en Angular (V8), me enseñaron las bases y fundamentos
             para ser un buen programador.
           </p>
-          <mat-icon [ngStyle]="{'color':'#faa42d'}" class="f24 icon">verified</mat-icon>
+          <mat-icon [ngStyle]="{ color: '#faa42d' }" class="f24 icon"
+            >verified</mat-icon
+          >
           <p class="f12 texto-sub">
-            Aprendi sobre el uso de Git, metolodogias SCRUM, entre otras cosas y lo más importante, trabajar en equipo.
+            Aprendi sobre el uso de Git, metolodogias SCRUM, entre otras cosas y
+            lo más importante, trabajar en equipo.
           </p>
-          <mat-icon [ngStyle]="{'color':'#faa42d'}" class="f24 icon">verified</mat-icon>
+          <mat-icon [ngStyle]="{ color: '#faa42d' }" class="f24 icon"
+            >verified</mat-icon
+          >
           <p class="f12 texto-sub">
-           Contribuí con varias partes de la interfaz mediante la creación de los mismos mediante Figma.
+            Contribuí con varias partes de la interfaz mediante la creación de
+            los mismos mediante Figma.
           </p>
         </div>
       </div>
     </div>
     <div class="container-subtitle f18" *ngIf="isAccusys">
-      <p style="text-align: center;">Angular Dev<span class="texto-orange"> Accusys</span></p>
+      <p style="text-align: center">
+        Angular Dev<span class="texto-orange"> Accusys</span>
+      </p>
       <div class="subtitle-exp f12">
         <p>Oct. 2021 - Abr. 2022</p>
         <div class="subtitle-icons">
-          <mat-icon [ngStyle]="{'color':'#faa42d'}" class="f24 icon">verified</mat-icon>
-          <p class="f12 texto-sub">Este es uno de mis actuales trabajos, utilizamos la metodologia SCRUM para que el trabajo diario tenga un mejor registro tanto para nuestro PM y para nosotros, el equipo encargado del proyecto.
+          <mat-icon [ngStyle]="{ color: '#faa42d' }" class="f24 icon"
+            >verified</mat-icon
+          >
+          <p class="f12 texto-sub">
+            Este es uno de mis actuales trabajos, utilizamos la metodologia
+            SCRUM para que el trabajo diario tenga un mejor registro tanto para
+            nuestro PM y para nosotros, el equipo encargado del proyecto.
           </p>
-          <mat-icon [ngStyle]="{'color':'#faa42d'}" class="f24 icon">verified</mat-icon>
-          <p class="f12 texto-sub"> La empresa es una Software Factory, en donde es usual rotar de proyecto a proyecto. Actualmente me encuentro realizando una aplicación para los bancos.
+          <mat-icon [ngStyle]="{ color: '#faa42d' }" class="f24 icon"
+            >verified</mat-icon
+          >
+          <p class="f12 texto-sub">
+            La empresa es una Software Factory, en donde es usual rotar de
+            proyecto a proyecto. Actualmente me encuentro realizando una
+            aplicación para los bancos.
           </p>
-          <mat-icon [ngStyle]="{'color':'#faa42d'}" class="f24 icon">verified</mat-icon>
-          <p class="f12 texto-sub"> Usamos Angular (V11), manejamos los repositorios mediante TFS 2018, usamos Git para el manejo de las ramas.
+          <mat-icon [ngStyle]="{ color: '#faa42d' }" class="f24 icon"
+            >verified</mat-icon
+          >
+          <p class="f12 texto-sub">
+            Usamos Angular (V11), manejamos los repositorios mediante TFS 2018,
+            usamos Git para el manejo de las ramas.
           </p>
         </div>
       </div>
     </div>
     <div class="container-subtitle f18" *ngIf="isSeenka">
-      <p style="text-align: center;">Angular Dev <span class="texto-orange">Seenka</span></p>
+      <p style="text-align: center">
+        Angular Dev <span class="texto-orange">Seenka</span>
+      </p>
       <div class="subtitle-exp f12">
-        <p>Feb. 2022 - Actualidad</p>
+        <p>Feb. 2022 - Abr. 2022</p>
         <div class="subtitle-icons">
-          <mat-icon [ngStyle]="{'color':'#faa42d'}" class="f24 icon">verified</mat-icon>
-          <p class="f12 texto-sub">Otro de mis trabajos actuales, también utilizamos la metodologia SCRUM mediante el trabajo asignado por tickets.
+          <mat-icon [ngStyle]="{ color: '#faa42d' }" class="f24 icon"
+            >verified</mat-icon
+          >
+          <p class="f12 texto-sub">
+            Trabaje de manera freelance para ellos, también utilizamos la
+            metodologia SCRUM mediante el trabajo asignado por tickets.
           </p>
-          <mat-icon [ngStyle]="{'color':'#faa42d'}" class="f24 icon">verified</mat-icon>
-          <p class="f12 texto-sub">Es un único proyecto en el cual trabajo en conjunto al encargado del front. Es un proyecto de marketing para empresas, usamos una arquitectura de Micro-Servicios con GraphQL.
+          <mat-icon [ngStyle]="{ color: '#faa42d' }" class="f24 icon"
+            >verified</mat-icon
+          >
+          <p class="f12 texto-sub">
+            Es un único proyecto en el cual trabajo en conjunto al encargado del
+            front. Es un proyecto de marketing para empresas, usamos una
+            arquitectura de Micro-Servicios con GraphQL.
           </p>
-          <mat-icon [ngStyle]="{'color':'#faa42d'}" class="f24 icon">verified</mat-icon>
-          <p class="f12 texto-sub">El proyecto corre actualmente en Angular (V9), manejamos los repositorios mediante Gitlab y usamos Notion para todo lo que es documetación y tickets.
+          <mat-icon [ngStyle]="{ color: '#faa42d' }" class="f24 icon"
+            >verified</mat-icon
+          >
+          <p class="f12 texto-sub">
+            El proyecto corre actualmente en Angular (V9), manejamos los
+            repositorios mediante Gitlab y usamos Notion para todo lo que es
+            documetación y tickets.
           </p>
         </div>
       </div>
     </div>
+    <div class="container-subtitle f18" *ngIf="isQubik">
+      <p style="text-align: center">
+        Angular Dev SAP<span class="texto-orange"> Qubik Digital</span>
+      </p>
+      <div class="subtitle-exp f12">
+        <p>May. 2022 - Oct. 2022</p>
+        <div class="subtitle-icons">
+          <mat-icon [ngStyle]="{ color: '#faa42d' }" class="f24 icon"
+            >verified</mat-icon
+          >
+          <p class="f12 texto-sub">
+            Spartacus es una especie de framework basado en Angular para SAP
+            Commerce.
+          </p>
+          <mat-icon [ngStyle]="{ color: '#faa42d' }" class="f24 icon"
+            >verified</mat-icon
+          >
+          <p class="f12 texto-sub">
+            En mi experiencia en Qubik trabaje en dos proyectos.
+            <a>Deprati</a> que esta programado en vue.js (Estuve 2 meses). Y el proyecto mas
+            grande en el que me encuentro ahora (Promesa, que aun no esta en
+            producción) corre sobre Angular V11.
+          </p>
+          <mat-icon [ngStyle]="{ color: '#faa42d' }" class="f24 icon"
+            >verified</mat-icon
+          >
+          <p class="f12 texto-sub">Nos manejamos con Jira para el manejo de los sprints y Bitbucket para el manejo de las ramas.</p>
+        </div>
+      </div>
+    </div>
+  </div>
 
-</div>
-
+  <div class="container-exp-mobile">
+    <div class="flex-exp-mobile f14">
+      <div>
+        <button
+          class="buttons-exp-mobile"
+          (click)="setBanhaia()"
+          [ngClass]="{ 'hover-bar-mobile': isBanhaia === true }"
+        >
+          Banhaia
+        </button>
+      </div>
+      <div>
+        <button
+          class="buttons-exp-mobile"
+          (click)="setAccusys()"
+          [ngClass]="{ 'hover-bar-mobile': isAccusys === true }"
+        >
+          Accusys
+        </button>
+      </div>
+      <div>
+        <button
+          class="buttons-exp-mobile"
+          (click)="setSeenka()"
+          [ngClass]="{ 'hover-bar-mobile': isSeenka === true }"
+        >
+          Seenka
+        </button>
+      </div>
+      <div>
+        <button
+          class="buttons-exp-mobile"
+          (click)="setQubik()"
+          [ngClass]="{ 'hover-bar-mobile': isQubik === true }"
+        >
+          Qubik
+        </button>
+      </div>
+    </div>
+    <div class="container-subtitle f18" *ngIf="isBanhaia">
+      <p style="text-align: center">
+        Angular Dev <span class="texto-orange">Banhaia</span>
+      </p>
+      <div class="subtitle-exp f12">
+        <p>May. 2021 - Sept. 2021</p>
+        <div class="subtitle-icons">
+          <mat-icon [ngStyle]="{ color: '#faa42d' }" class="f24 icon"
+            >verified</mat-icon
+          >
+          <p class="f12 texto-sub">
+            Fue mi primera experiencia real en una empresa. Me capacitaron como
+            programador en Angular (V8), me enseñaron las bases y fundamentos
+            para ser un buen programador.
+          </p>
+          <mat-icon [ngStyle]="{ color: '#faa42d' }" class="f24 icon"
+            >verified</mat-icon
+          >
+          <p class="f12 texto-sub">
+            Aprendi sobre el uso de Git, metolodogias SCRUM, entre otras cosas y
+            lo más importante, trabajar en equipo.
+          </p>
+          <mat-icon [ngStyle]="{ color: '#faa42d' }" class="f24 icon"
+            >verified</mat-icon
+          >
+          <p class="f12 texto-sub">
+            Contribuí con varias partes de la interfaz mediante la creación de
+            los mismos mediante Figma.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="container-subtitle f18" *ngIf="isAccusys">
+      <p style="text-align: center">
+        Angular Dev<span class="texto-orange"> Accusys</span>
+      </p>
+      <div class="subtitle-exp f12">
+        <p>Oct. 2021 - Abr. 2022</p>
+        <div class="subtitle-icons">
+          <mat-icon [ngStyle]="{ color: '#faa42d' }" class="f24 icon"
+            >verified</mat-icon
+          >
+          <p class="f12 texto-sub">
+            Este es uno de mis actuales trabajos, utilizamos la metodologia
+            SCRUM para que el trabajo diario tenga un mejor registro tanto para
+            nuestro PM y para nosotros, el equipo encargado del proyecto.
+          </p>
+          <mat-icon [ngStyle]="{ color: '#faa42d' }" class="f24 icon"
+            >verified</mat-icon
+          >
+          <p class="f12 texto-sub">
+            La empresa es una Software Factory, en donde es usual rotar de
+            proyecto a proyecto. Actualmente me encuentro realizando una
+            aplicación para los bancos.
+          </p>
+          <mat-icon [ngStyle]="{ color: '#faa42d' }" class="f24 icon"
+            >verified</mat-icon
+          >
+          <p class="f12 texto-sub">
+            Usamos Angular (V11), manejamos los repositorios mediante TFS 2018,
+            usamos Git para el manejo de las ramas.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="container-subtitle f18" *ngIf="isSeenka">
+      <p style="text-align: center">
+        Angular Dev <span class="texto-orange">Seenka</span>
+      </p>
+      <div class="subtitle-exp f12">
+        <p>Feb. 2022 - Abr. 2022</p>
+        <div class="subtitle-icons">
+          <mat-icon [ngStyle]="{ color: '#faa42d' }" class="f24 icon"
+            >verified</mat-icon
+          >
+          <p class="f12 texto-sub">
+            Otro de mis trabajos actuales, también utilizamos la metodologia
+            SCRUM mediante el trabajo asignado por tickets.
+          </p>
+          <mat-icon [ngStyle]="{ color: '#faa42d' }" class="f24 icon"
+            >verified</mat-icon
+          >
+          <p class="f12 texto-sub">
+            Es un único proyecto en el cual trabajo en conjunto al encargado del
+            front. Es un proyecto de marketing para empresas, usamos una
+            arquitectura de Micro-Servicios con GraphQL.
+          </p>
+          <mat-icon [ngStyle]="{ color: '#faa42d' }" class="f24 icon"
+            >verified</mat-icon
+          >
+          <p class="f12 texto-sub">
+            El proyecto corre actualmente en Angular (V9), manejamos los
+            repositorios mediante Gitlab y usamos Notion para todo lo que es
+            documetación y tickets.
+          </p>
+        </div>
+      </div>
+    </div>
+    <div class="container-subtitle f18" *ngIf="isQubik">
+      <p style="text-align: center">
+        Angular Dev SAP<span class="texto-orange"> Qubik Digital</span>
+      </p>
+      <div class="subtitle-exp f12">
+        <p>May. 2022 - Oct. 2022</p>
+        <div class="subtitle-icons">
+          <mat-icon [ngStyle]="{ color: '#faa42d' }" class="f24 icon"
+            >verified</mat-icon
+          >
+          <p class="f12 texto-sub">
+            Spartacus es una especie de framework basado en Angular para SAP
+            Commerce.
+          </p>
+          <mat-icon [ngStyle]="{ color: '#faa42d' }" class="f24 icon"
+            >verified</mat-icon
+          >
+          <p class="f12 texto-sub">
+            En mi experiencia en Qubik trabaje en dos proyectos.
+            <a>Deprati</a> que esta programado en vue.js (Estuve 2 meses). Y el proyecto mas
+            grande en el que me encuentro ahora (Promesa, que aun no esta en
+            producción) corre sobre Angular V11.
+          </p>
+          <mat-icon [ngStyle]="{ color: '#faa42d' }" class="f24 icon"
+            >verified</mat-icon
+          >
+          <p class="f12 texto-sub">
+            Nos manejamos con Jira para el manejo de los sprints y Bitbucket para el manejo de las ramas.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
 </div>
